@@ -18,7 +18,7 @@ body {
 }
 
 .header {
-  min-height: 500px;
+  min-height: 100vh;
   background-image: url(./images/1.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -115,7 +115,6 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 25rem;
-  margin: auto;
 }
 
 .homes {
@@ -264,44 +263,31 @@ img {
 }
 
 .locations {
-  min-height: 810px;
-  background-image: url(./images/map.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
+  margin: 4rem 0;
 }
 
-.locations-left h1 {
-  color: var(--main-color);
-  font-size: 44px;
-  font-weight: 400;
-  text-transform: uppercase;
-  line-height: 120%;
+.options-box {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 14px 3px rgba(0, 0, 0, 0.03);
+  background: #fff;
+  padding: 1.6rem 1rem;
+  max-height: 370px;
 }
 
-.locations-left {
-  position: relative;
-}
-
-.map-point h2 {
+.options-title,
+.project-options__title {
   color: var(--main-color);
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 1rem;
 }
 
-.locations-left .map-point {
-  max-width: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-}
-
-.point {
-  width: 40px;
-  height: 40px;
-  border: 5px solid var(--main-color);
+.custom-checkbox {
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--text-color);
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -309,20 +295,110 @@ img {
 }
 
 .circle {
-  background-color: var(--main-color);
-  width: 20px;
-  height: 20px;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
   border-radius: 100%;
 }
 
-.locations-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.options-list,
+.projects-list {
+  list-style: none;
+  margin-bottom: 3rem;
+}
+
+.projects-list li {
+  text-transform: uppercase;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.options-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-transform: uppercase;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.options-list li.active {
+  color: var(--main-color);
+}
+
+.custom-checkbox.active {
+  border-color: var(--main-color);
+}
+
+.custom-checkbox.active .circle {
+  background-color: var(--main-color);
+}
+
+.active-item {
+  color: var(--main-color) !important;
+}
+
+.locations-box {
+  border: 1px solid rgba(7, 28, 53, 0.1);
+  padding: 1rem;
+}
+
+.dubai-card {
+  min-height: 600px;
+  background-image: url(./images/Rectangle\ 7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  background-position: center;
+}
+
+.cty-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 0 1rem;
+}
+
+.cty-left {
+  min-width: 270px;
+}
+
+.cty-right {
+  flex-grow: 0.5;
+}
+
+.dubai-card-description {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(7.1134px);
+  height: max-content;
+  padding: 4% 6%;
+}
+
+.dubai-card-description h1 {
+  color: var(--main-color);
+  font-size: 28.5px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.dubai-card-description p {
+  color: var(--main-color);
+  font-weight: 300 !important;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  line-height: 23px;
 }
 
 @media (max-width: 768px) {
   .info-box {
-    margin: auto;
+    margin: 20% auto;
   }
 
   .header {
@@ -348,5 +424,25 @@ img {
 
   .home-description {
     font-size: 16px;
+  }
+
+  .projects-title {
+    font-size: 20px;
+  }
+
+  .home-left {
+    margin: 0 auto;
+  }
+
+  .cty-wrapper {
+    flex-direction: column;
+  }
+
+  .dubai-card-description h1 {
+    font-size: 20px;
+  }
+
+  .dubai-card-description p {
+    font-size: 14px;
   }
 }
