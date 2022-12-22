@@ -45,7 +45,11 @@ body {
 
 img {
   max-width: 100%;
-  height: auto;
+}
+.map-image {
+  max-width: 90%;
+  margin: auto;
+  display: block;
 }
 
 .site-logo {
@@ -253,6 +257,67 @@ img {
 
 .card-info h2 span {
   font-size: 16px;
+}
+
+.projects {
+  margin-bottom: 5rem;
+}
+
+.locations {
+  min-height: 810px;
+  background-image: url(./images/map.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.locations-left h1 {
+  color: var(--main-color);
+  font-size: 44px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 120%;
+}
+
+.locations-left {
+  position: relative;
+}
+
+.map-point h2 {
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.locations-left .map-point {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.point {
+  width: 40px;
+  height: 40px;
+  border: 5px solid var(--main-color);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  background-color: var(--main-color);
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.locations-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 @media (max-width: 768px) {
