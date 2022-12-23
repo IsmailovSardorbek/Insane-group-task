@@ -232,7 +232,7 @@ img {
 }
 
 .community {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .card-info {
@@ -537,6 +537,7 @@ img {
 
 .payment {
   padding: 0 3rem;
+  margin-bottom: 10rem;
 }
 
 .payment-box {
@@ -587,6 +588,31 @@ img {
   border: 1px solid rgba(7, 28, 53, 0.15);
   padding: 0.7rem 2rem;
 }
+
+.about-box {
+  position: relative;
+}
+
+.about-box .image-box {
+  display: flex;
+  justify-content: end;
+}
+
+.about-box .payment-option {
+  position: absolute;
+  left: 0;
+}
+
+.about-box h1 {
+  font-weight: 400;
+  font-size: 50px;
+  color: var(--main-color);
+}
+
+.about-box p {
+  margin-bottom: 0;
+}
+/* ========================== Media Queries ============================== */
 
 @media (max-width: 768px) {
   .info-box {
@@ -682,24 +708,37 @@ img {
   }
 
   .payment-option {
-    position: static;
+    position: static !important;
   }
 
+  .about-box,
   .payment-box {
     position: initial;
     display: flex;
     flex-wrap: wrap;
     padding: 2rem 1rem;
     text-align: center;
+    justify-content: center;
   }
 
   .payment-option h1 {
-    font-size: 30px;
-    text-align: center;
+    font-size: 25px;
   }
 
   .payment-box hr {
     margin: 1rem auto;
+  }
+
+  .payment-option p {
+    font-size: 14px;
+  }
+
+  .image-box {
+    display: none !important;
+  }
+
+  .enquire {
+    font-size: 14px;
   }
 }
 
