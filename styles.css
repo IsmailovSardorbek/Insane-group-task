@@ -800,6 +800,9 @@ img {
 .footer-image {
   margin: auto;
 }
+.contact-link:not(.phone) {
+  display: flex;
+}
 
 /* ========================== Media Queries ============================== */
 
