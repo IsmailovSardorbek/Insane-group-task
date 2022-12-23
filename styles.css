@@ -461,7 +461,6 @@ img {
 .hotel-card {
   display: flex;
   filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.07));
-  max-width: 700px;
   flex-wrap: wrap;
 }
 
@@ -493,11 +492,11 @@ img {
 
 .img-left {
   min-width: 200px;
-  max-width: 350px;
+  max-width: 320px;
 }
 
 .about-hotel {
-  max-width: 300px;
+  max-width: 320px;
   max-height: 400px;
   padding: 1.5rem;
   background: rgba(255, 255, 255, 0.85);
@@ -537,6 +536,10 @@ img {
   background-image: url(./images/person.png) !important;
 }
 
+#card3 {
+  background-image: url(./images/field.png);
+}
+
 @media (max-width: 768px) {
   .info-box {
     margin: 20% auto;
@@ -544,6 +547,10 @@ img {
 
   .header {
     padding-left: 0;
+  }
+
+  .prices {
+    padding: 0 0.5rem;
   }
 
   .price {
@@ -616,13 +623,14 @@ img {
   .about-hotel {
     padding: 0.8rem;
   }
-  /* .control-left button,
-  .control-right button {
-    width: 40px;
-    height: 40px;
-  } */
-  .control-left, .control-right {
+
+  .control-left,
+  .control-right {
     display: none;
+  }
+
+  .slider {
+    justify-content: center;
   }
 }
 
@@ -632,6 +640,6 @@ img {
   }
 
   .img-left {
-    max-height: 248px;
+    max-height: 290px;
   }
 }
