@@ -46,6 +46,7 @@ body {
 img {
   max-width: 100%;
 }
+
 .map-image {
   max-width: 90%;
   margin: auto;
@@ -472,6 +473,7 @@ img {
 
 .img-left img {
   height: 100%;
+  width: 100%;
 }
 
 .control-left,
@@ -491,8 +493,7 @@ img {
 
 .img-left {
   min-width: 200px;
-  min-height: 200px;
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .about-hotel {
@@ -530,6 +531,10 @@ img {
 .about-hotel h2 span {
   font-size: 12px !important;
   font-weight: 500 !important;
+}
+
+#card2 {
+  background-image: url(./images/person.png) !important;
 }
 
 @media (max-width: 768px) {
@@ -621,5 +626,9 @@ img {
 @media (max-width: 700px) {
   .hotel-card {
     flex-direction: column;
+  }
+
+  .img-left {
+    max-height: 248px;
   }
 }
