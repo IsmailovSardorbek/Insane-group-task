@@ -811,6 +811,10 @@ img {
     margin: 20% auto;
   }
 
+  .contacts {
+    gap: 1.3rem;
+  }
+
   .header {
     padding-left: 0;
   }
