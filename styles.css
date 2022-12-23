@@ -347,6 +347,7 @@ img {
 .locations-box {
   border: 1px solid rgba(7, 28, 53, 0.1);
   padding: 1rem;
+  margin-bottom: 5rem;
 }
 
 .dubai-card {
@@ -358,6 +359,7 @@ img {
   justify-content: end;
   align-items: flex-end;
   background-position: center;
+  margin-bottom: 4rem;
 }
 
 .cty-wrapper {
@@ -394,6 +396,140 @@ img {
   font-size: 1rem;
   font-family: "Lato", sans-serif;
   line-height: 23px;
+}
+
+.units-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10%;
+}
+
+.slide-counter {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  color: var(--text-color);
+}
+
+.slide-counter h1 {
+  font-weight: 300;
+}
+
+.active-index {
+  color: var(--main-color);
+}
+
+.units-title {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--main-color);
+}
+
+/* .hotel-info {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem 1.5rem;
+}
+
+.hotel-info h1 {
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-size: 30px;
+  font-weight: 400;
+}
+ */
+
+.bed {
+  color: var(--main-color);
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.hotel-description {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.hotel-card {
+  display: flex;
+  filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.07));
+  max-width: 700px;
+  flex-wrap: wrap;
+}
+
+.slider {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.img-left img {
+  height: 100%;
+}
+
+.control-left,
+.control-right {
+  display: flex;
+  align-items: center;
+  flex-grow: 0.15;
+}
+
+.control-left button,
+.control-right button {
+  background: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.img-left {
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 300px;
+}
+
+.about-hotel {
+  max-width: 300px;
+  max-height: 400px;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.about-hotel .see-more {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  padding: 0.7rem 0;
+}
+
+.about-hotel h2 {
+  color: var(--main-color);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 1.5rem 0;
+}
+
+.about-hotel h1 {
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.about-hotel h2 span {
+  font-size: 12px !important;
+  font-weight: 500 !important;
 }
 
 @media (max-width: 768px) {
@@ -444,5 +580,46 @@ img {
 
   .dubai-card-description p {
     font-size: 14px;
+  }
+
+  .units-title {
+    font-size: 16px;
+  }
+  .slide-counter h1 {
+    font-size: 15px;
+  }
+
+  .hotel-card {
+    max-width: 350px;
+  }
+
+  .about-hotel h1 {
+    font-size: 18px;
+  }
+
+  .bed {
+    font-size: 14px;
+  }
+
+  .hotel-description {
+    font-size: 15px;
+  }
+
+  .about-hotel .see-more {
+    font-size: 12px;
+  }
+  .about-hotel {
+    padding: 0.8rem;
+  }
+  .control-left button,
+  .control-right button {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hotel-card {
+    flex-direction: column;
   }
 }
