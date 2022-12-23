@@ -227,6 +227,10 @@ img {
   background-image: url(./images/6.png);
 }
 
+.community {
+  margin-bottom: 5rem;
+}
+
 .card-info {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(7.5px);
@@ -426,19 +430,6 @@ img {
   color: var(--main-color);
 }
 
-/* .hotel-info {
-  background: rgba(255, 255, 255, 0.85);
-  padding: 2rem 1.5rem;
-}
-
-.hotel-info h1 {
-  text-transform: uppercase;
-  color: var(--main-color);
-  font-size: 30px;
-  font-weight: 400;
-}
- */
-
 .bed {
   color: var(--main-color);
   font-family: "Lato", sans-serif;
@@ -460,8 +451,8 @@ img {
 
 .hotel-card {
   display: flex;
-  filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.07));
   flex-wrap: wrap;
+  filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.07));
 }
 
 .slider {
@@ -538,6 +529,59 @@ img {
 
 #card3 {
   background-image: url(./images/field.png);
+}
+
+.payment {
+  padding: 0 3rem;
+}
+
+.payment-box {
+  position: relative;
+}
+
+.payment-option {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.07);
+  backdrop-filter: blur(7.5px);
+  padding: 4rem 3rem;
+  position: absolute;
+  bottom: -10%;
+  right: 0;
+  max-width: 610px;
+}
+
+.payment-option h1 {
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-size: 50px;
+  line-height: 120%;
+}
+
+.payment-option hr {
+  width: 230px;
+  bottom: 0;
+  background: var(--main-color);
+  opacity: 0.1;
+  margin: 1rem 0;
+}
+
+.payment-option p {
+  font-family: "Lato", sans-serif;
+  color: var(--main-color);
+  line-height: 24px;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.enquire {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  border: 1px solid rgba(7, 28, 53, 0.15);
+  padding: 0.7rem 2rem;
 }
 
 @media (max-width: 768px) {
@@ -631,6 +675,27 @@ img {
 
   .slider {
     justify-content: center;
+  }
+
+  .payment-option {
+    position: static;
+  }
+
+  .payment-box {
+    position: initial;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .payment-option h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .payment-box hr {
+    margin: 1rem auto;
   }
 }
 
