@@ -616,10 +616,13 @@ img {
   .about-hotel {
     padding: 0.8rem;
   }
-  .control-left button,
+  /* .control-left button,
   .control-right button {
     width: 40px;
     height: 40px;
+  } */
+  .control-left, .control-right {
+    display: none;
   }
 }
 
