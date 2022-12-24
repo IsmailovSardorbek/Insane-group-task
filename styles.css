@@ -1448,6 +1448,10 @@ img {
   .payment-title {
     font-size: 32px;
   }
+
+  .header-logo a img {
+    width: 140px;
+  }
 }
 
 @media (max-width: 700px) {
