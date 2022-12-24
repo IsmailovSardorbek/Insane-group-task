@@ -1178,6 +1178,10 @@ img {
     gap: 1.3rem;
   }
 
+  .project-popup-card {
+    padding: 2rem;
+  }
+
   .header {
     padding-left: 0;
   }
