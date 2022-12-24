@@ -217,6 +217,25 @@ img {
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.07);
   padding: 3rem 4rem;
   margin: 0 2rem;
+  margin-bottom: 7rem;
+}
+
+.payment-title {
+  color: var(--main-color);
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 54px;
+}
+
+.payments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 8rem;
 }
 
 .card-content {
@@ -249,6 +268,22 @@ img {
 
 .content-header {
   margin-bottom: 5rem;
+}
+
+.percentage {
+  color: var(--main-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  margin-bottom: 1rem;
+}
+
+.time {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--text-color);
+  text-transform: uppercase;
 }
 
 .gallery-items {
@@ -1207,12 +1242,44 @@ img {
     display: block;
   }
 
+  .card-info h1 {
+    font-size: 18px;
+  }
+
+  .project-price {
+    margin-bottom: 3rem;
+  }
+
+  .card-info h2 {
+    font-size: 15px;
+  }
+
+  .card-info h2 span {
+    font-size: 13px;
+  }
+
   .project-popup-card .see-more {
     display: initial !important;
   }
 
   .content-title {
     font-size: 25px;
+  }
+
+  /* .payments {
+    flex-direction: column;
+  } */
+
+  .percentage {
+    font-size: 40px;
+  }
+
+  .payment-title {
+    font-size: 30px;
+  }
+
+  .time {
+    font-size: 15px;
   }
 
   .home-description {
