@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
+@font-face {
+  font-family: "Alethia Pro";
+  src: url(./Fonts/alethiapro-regular.otf);
+}
+
 :root {
   --main-color: #071c35;
   --text-color: #777777;
@@ -846,7 +851,7 @@ input::placeholder {
 }
 
 .bg-color-box {
-  height: 208px;
+  height: 189px;
   position: absolute;
   bottom: 0;
   background-color: var(--main-color);
