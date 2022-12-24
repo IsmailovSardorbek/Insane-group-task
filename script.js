@@ -26,3 +26,19 @@ projectListItems.forEach((item) => {
     }
   });
 });
+
+const projectPopup = document.querySelector(".project-popup");
+
+const popupToggler = document.querySelector(".project-link a");
+
+const closeBtn = document.querySelector(".close");
+
+popupToggler.addEventListener("click", () => {
+  projectPopup.classList.add("show");
+  document.body.classList.add("no-overflow");
+});
+
+closeBtn.onclick = () => {
+  projectPopup.classList.remove("show");
+  document.body.classList.remove("no-overflow");
+};
