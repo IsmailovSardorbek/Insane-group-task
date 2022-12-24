@@ -229,6 +229,10 @@ img {
   place-items: center;
 }
 
+.left-content {
+  margin-bottom: 3rem;
+}
+
 .left-content h1:not(.project-price) {
   text-transform: uppercase;
   color: var(--main-color);
@@ -279,6 +283,14 @@ img {
   font-size: 20px;
   line-height: 24px;
   color: #003d5f;
+  margin-bottom: 7rem;
+}
+
+.project-popup-card .see-more {
+  width: 80%;
+  display: block;
+  text-align: center;
+  padding: 0.8rem 2rem;
 }
 
 .bottom-line {
@@ -1188,6 +1200,10 @@ img {
   .see-more {
     margin: auto;
     display: block;
+  }
+
+  .project-popup-card .see-more {
+    display: initial !important;
   }
 
   .content-title {
