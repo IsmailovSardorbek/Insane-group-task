@@ -11,11 +11,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="project-popup">
+    <!-- ============================================ PROJECT POPUP ============================================  -->
+    <div class="project-popup show">
       <nav class="nav-header">
         <div class="container header__container">
           <div class="header-logo">
@@ -103,7 +108,80 @@
           </div>
         </div>
       </section>
+
+      <div class="units-header project-header">
+        <h1 class="units-title text-uppercase">floor plans</h1>
+
+        <div class="slide-counter">
+          <h1><span class="active-index"> 1</span>/3</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="project-gallery">
+          <div class="gallery-items">
+            <div class="btn-left">
+              <img src="./images/btn-left.png" alt="" />
+            </div>
+
+            <div class="project-popup-card">
+              <div class="card-content">
+                <div class="left-content">
+                  <div class="content-header">
+                    <h1>rosewater</h1>
+                    <h2>Penthouse</h2>
+                  </div>
+
+                  <ul class="facilities">
+                    <li>
+                      <img src="./images/bed.png" alt="" />
+                      <span class="facility">
+                        Bedrooms
+                        <img
+                          src="./images/bottom-line.png"
+                          class="bottom-line"
+                        />
+                        2
+                      </span>
+                    </li>
+                    <li>
+                      <img src="./images/bathroom.png" alt="" />
+                      <span class="facility">
+                        Bathrooms
+                        <img
+                          src="./images/bottom-line.png"
+                          class="bottom-line"
+                        />
+                        1
+                      </span>
+                    </li>
+                    <li>
+                      <img src="./images/area.png" alt="" />
+                      <span class="facility">
+                        Total area
+                        <img
+                          src="./images/bottom-line.png"
+                          class="bottom-line"
+                        />
+                        815 sq. ft.
+                      </span>
+                    </li>
+                  </ul>
+                  <h1 class="project-price">From AED 2 027 888</h1>
+                </div>
+                <div class="right-content">
+                  <img src="./images/bath.png" class="bath-img" />
+                </div>
+              </div>
+            </div>
+            <div class="btn-right">
+              <img src="./images/btn-right.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!--  ==================================== MAIN CONTENT ==================================== -->
 
     <header class="header">
       <div class="container">

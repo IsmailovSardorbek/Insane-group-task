@@ -211,6 +211,80 @@ img {
   min-height: 500px;
 }
 
+.project-popup-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.07);
+  padding: 3rem 4rem;
+}
+
+.card-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.right-content {
+  display: grid;
+  height: 100%;
+  place-items: center;
+}
+
+.left-content h1:not(.project-price) {
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 0.5rem;
+}
+.left-content h2 {
+  color: var(--text-color);
+  font-family: "Lato", sans-serif;
+  font-weight: 30;
+}
+
+.content-header {
+  margin-bottom: 5rem;
+}
+
+.gallery-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.facilities li img {
+  margin-right: 1rem;
+}
+
+.facilities li {
+  font-size: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.facilities li:nth-child(3) .bottom-line {
+  width: 10rem;
+}
+
+.facilities {
+  list-style: none;
+  font-family: "Lato", sans-serif;
+  color: var(--main-color);
+  margin-bottom: 4rem;
+}
+
+.project-price {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #003d5f;
+}
+
+.bottom-line {
+  vertical-align: bottom;
+}
+
 .card-info-box {
   display: flex;
   align-items: end;
@@ -771,6 +845,19 @@ img {
   margin-bottom: 1.5rem;
 }
 
+.section-left h1 {
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.section-left h2 {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 300;
+}
+
 .phone {
   font-size: 20px;
   line-height: 24px;
@@ -780,6 +867,10 @@ img {
 
 .contacts li:first-child {
   margin-right: 10px;
+}
+
+.project-popup .slider {
+  width: 100%;
 }
 
 .contacts li {
@@ -822,13 +913,38 @@ img {
   margin: auto;
 }
 
+.project-header {
+  padding-bottom: 3rem;
+}
+
+.swiper {
+  margin-bottom: 5rem;
+}
+
+.control-btn {
+  width: 60px;
+  z-index: 999;
+  height: 60px;
+  top: 10%;
+}
+.project-carousel {
+  margin: 0 2rem;
+}
+
+.swiper-button-next::after {
+  content: "";
+}
+.swiper-button-prev::after {
+  content: "";
+}
+
 .nav-header {
   position: fixed;
   top: 0;
   left: 0;
   background: #fff;
   width: 100%;
-  z-index: 1111111111;
+  z-index: 111;
 }
 
 .project-popup {
@@ -898,6 +1014,7 @@ img {
   color: var(--main-color);
   max-width: 350px;
   padding: 3rem;
+  margin-bottom: 2rem;
 }
 
 .content-section h2 {
@@ -955,7 +1072,7 @@ img {
   display: flex;
   justify-content: end;
   flex-direction: column;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
   min-width: 800px;
   padding: 0 1rem;
 }
@@ -1012,6 +1129,25 @@ img {
   .info-box {
     margin: 20% auto;
   }
+
+  .facilities li {
+    font-size: 12px;
+  }
+
+  .bottom-line {
+    width: 100px !important;
+  }
+
+  .btn-right,
+  .btn-left {
+    display: none;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+  }
+
   .form-inline input {
     width: 100%;
   }
@@ -1086,7 +1222,7 @@ img {
     font-size: 14px;
   }
 
-  .hotel-info-card {
+  .h-left {
     margin: 0 auto;
   }
 
